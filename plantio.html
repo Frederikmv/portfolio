@@ -55,8 +55,7 @@
 								<div class="inner">
 
 									<h3 class="major">Abstract</h3>
-									<p>In this report we present the development of PlantIO, a scalable, secure, autonomous and self-sustaining system that aims to create the 	optimal environment for any given plant. PlantIO continuously collects environmental data inside a greenhouse and uses this to respectively change the humidity, soil moisture and temperature using different actuators in real-time to create the optimal environment for aplant. The adjustment of the environment was adjusted using control theory and different sensors to measure the environmental data. We conducted a series of studies to see whether the system was scalable, secure and autonomous.</p>
-									<p>Timeframe: 5 month course</p>
+									<p>In this report, we present the development of PlantIO, a scalable, secure, autonomous and self-sustaining system that aims to create the optimal environment for any given plant. PlantIO continuously collects environmental data inside a greenhouse and uses this to respectively change the humidity, soil moisture and temperature using different actuators in real-time to create the optimal environment for a plant. The adjustment of the environment was adjusted using control theory and different sensors to measure the environmental data. We conducted a series of studies to see whether the system was scalable, secure and autonomous.</p>
 									<b>My role:</b>
 									<p>This course consisted of a project, where we created PlantIO, and a lot of theory on P2P and cloud computing. Many of the parts in creating this prototype was collaborative but I mostly worked on setting up every sensor and actuator and using an Arduino framework for handling the data and creating a PID system.</p>
 
@@ -64,13 +63,13 @@
 										<article>
 											<a class="image"><img src="images/iothardware2.JPG" alt="" /></a>
 											<h3 class="major">Prototype</h3>
-											<p>The system consists of: 1) Fan, 2) DHT temperature and humiditysensor, 3) Heat lamp, 4) Water flow sensor, 5) Relay, 6) LED strips, 7) Ground moisture sensor, 8) Water pump.  A  Raspberry  Pie acts   as  the  server  and  two  NodeMCUESP8266 microcontrollers acting as nodes. Furthermore, we are using the Evrythng platform as a cloud service as it is an easy way to distribute data from IoT components to web applications. The NodeM-CUs are developed with the Arduino IDE2, whereas the server is developed  with  Node.js3.  The  web  applications  was  developed  using Vue.js integrated with OAuth2.0. </p>
+											<p>The system consists of 1) Fan, 2) DHT temperature and humidity sensor, 3) Heat lamp, 4) Water flow sensor, 5) Relay, 6) LED strips, 7) Ground moisture sensor, 8) Water pump.  A  Raspberry  Pie acts as the server and two  NodeMCUESP8266 microcontrollers acting as nodes. Furthermore, we are using the Evrythng platform as a cloud service as it is an easy way to distribute data from IoT components to web applications. The NodeM-CUs are developed with the Arduino IDE2, whereas the server is developed with  Node.js3.  The web applications were developed using Vue.js integrated with OAuth2.0.</p>
 											<!--  <a href="#" class="special">Learn more</a>-->
 										</article>
 										<article>
 											<a class="image"><img src="images/TempHumHeat.JPG" alt="" /></a>
 											<h3 class="major">Data</h3>
-											<p>A PID controller calculates an output based on input from a given source and the previous outputs calculated. We used such controllers to monitor the plant environment, so if the temperature sensor measures  a  temperature  below  the  defined  threshold  it  will  eventually turn  on  the  heating  lamp.  This  way  of  control  aims  to  hit  a  targetvalue - a set point - and stay at this value. The same is true for the water pump and ground moisture sensor as well as the fan and humidity sensor. If the measured moisture level dips below the set pointthe water pump will activate for a time, followed by a new reading.
+											<p>A PID controller calculates an output based on input from a given source and the previous outputs calculated. We used such controllers to monitor the plant environment, so if the temperature sensor measures a  temperature below the defined threshold it will eventually turn on the heating lamp.  This way of control aims to hit target value - a set point - and stay at this value. The same is true for the water pump and ground moisture sensor as well as the fan and humidity sensor. If the measured moisture level dips below the set point the water pump will activate for a time, followed by a new reading.
 											</p>
 											<!--  <a href="#" class="special">Learn more</a>-->
 										</article>
